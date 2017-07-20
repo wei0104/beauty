@@ -1,0 +1,16 @@
+<h1>Hello Bags</h1>
+
+<p>
+    <a href="/#/add-bag">Add a Bag</a>
+</p>
+
+<ul>
+    <li ng-repeat='bag in bags'>
+        <a href="/#/bag/{{bag._id}}">
+            {{bag.title}}
+        </a>
+        <a href="/#/bag/delete/{{bag._id}}">
+            <i class="glyphicon glyphicon-remove"></i>
+        </a>
+    </li>
+</ul>
